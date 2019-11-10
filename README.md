@@ -42,15 +42,14 @@ Requirements.txt
 
 ## Cloning
 In your terminal:
-
-  $ git clone https://github.com/emdeechege/MyGallery
-  $ cd MyGallery
+    $ git clone https://github.com/collinsbett29/personal-gallery.git
+    $ cd MyGallery
 Running the Application
 Creating the virtual environment
 
-  $ python3.6 -m venv --without-pip virtual
-  $ source virtual/bin/activate
-  $ curl https://bootstrap.pypa.io/get-pip.py | python
+    $ python3.6 -m venv --without-pip virtual
+    $ source virtual/bin/activate
+    $ curl https://bootstrap.pypa.io/get-pip.py | python
 
 ### Installing Django and other Modules
 
