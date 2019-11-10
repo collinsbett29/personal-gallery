@@ -15,14 +15,16 @@ These are the behaviours/features that the application implements for use by a u
 
 Admin Abilities
 These are the behaviours/features that the application implements for use by the admin.
-
+---------------------------------------------------------------------------
 Admin should:
-
+-------------------------------------------------------------------
 Sign in to the gallery
 Create new images for showcasing
 Delete images
+--------------------------
 Update image post details.
 Specifications
+--------------------------------------
 Behaviour	Input	Output
 Admin Authentication	On demand	Access Admin dashboard
 Display all images	Home page	Clickable links to open any images in a modal
