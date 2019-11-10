@@ -42,9 +42,11 @@ Requirements.txt
 
 ## Cloning
 In your terminal:
+
     $ git clone https://github.com/collinsbett29/personal-gallery.git
-    $ cd MyGallery
-Running the Application
+    $ cd personal gallery
+
+### Running the Application
 Creating the virtual environment
 
     $ python3.6 -m venv --without-pip virtual
