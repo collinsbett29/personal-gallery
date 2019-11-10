@@ -1,0 +1,22 @@
+{%extends 'all-images/base.html'%}
+{% block content %}
+{{block.super}}
+<div class="container" style="background-color: black;">
+    <h3 style="text-align: center;font-family: 'Times New Roman', Times, serif;font-style: italic;color:blue;font-size: 50px;">MY GALLERY</h3>
+<div class="row" style="margin-top: 50px;margin-bottom: 100px;">
+  <!-- Looping through images   -->
+  {% for image in images %}
+      <!--Display Image  -->
+    <div class="col-md-3">
+        <div class="thumbnail">
+            <a href="/image/{{image.id}}" > <img  src="{{image.image.url}}" class="img-responsive" alt="Image"></a>
+        </div>
+    </div>
+  {% empty %}
+  <div class="row">
+    <h2 class="text-center">There No Images</h2>
+  </div>
+  {% endfor %}
+</div>
+</div>
+{% endblock %}
