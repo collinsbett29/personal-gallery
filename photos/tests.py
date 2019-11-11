@@ -4,14 +4,14 @@ from .models import Category,Location,Image
 # Create your tests here.
 class CategoryTestClass(TestCase):
     def setUp(self):
-        self.Party = Category(name='Party').save()
+        self.Party = Category(name='category').save()
 
     def test_new_category_isinstance_of_category(self):
         self.assertTrue(isinstance(self.Party, Category))
 
 class LocationTestClass(TestCase):
     def setUp(self):
-        self.Nairobi = Location('Nairobi')
+        self.Nairobi = Location('location')
 
     def test_new_location_isinstance_of_location(self):
         self.assertTrue(isinstance(self.Nairobi, Location))
@@ -21,11 +21,11 @@ class ImageTestClass(TestCase):
 
     def setUp(self):
         # Creating a new location and saving it
-        self.new_location = Location(name='Nairobi')
+        self.new_location = Location(name='category')
         self.new_location.save()
 
         # Creating a new category and saving it
-        self.new_category = Category(name = 'Party')
+        self.new_category = Category(name = 'location')
         self.new_category.save()
 
         # Creating a new image and saving it
