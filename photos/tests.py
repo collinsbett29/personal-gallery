@@ -5,10 +5,10 @@ from .models import Image,Location,Category
 class ImageTestClass(TestCase):
     def setUp(self):
         # create a new location and save
-        self.new_location = Location(name='Nairobi')
+        self.new_location = Location(name='locations')
         self.new_location.save()
 
         # create a new category and save
-        self.new_category = Category(name='ocean')
+        self.new_category = Category(name='categories')
 
 
