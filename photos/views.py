@@ -16,25 +16,6 @@ def image_of_day(request):
     images = Image.todays_image()
     return render(request, 'all-images/today-images.html', {"date": date, "images": images})
 
-
-# View Function to present images from past days
-def past_days_image(request, past_date):
-    try:
-        # Converts data from the string Url
-        date = dt.datetime.strptime(past_date, '%Y-%m-%d').date()
-    except ValueError:
-        # Raise 404 error when ValueError is thrown
-        raise Http404()
-        assert False
-
-    if date == dt.date.today():
-        return redirect(image_of_day)
-
-    images = Image.days_image(date)
-    return render(request, 'all-images/past-images.html', {"date": date, "images": images})
-
-
-
 def search_results(request):
 
     if 'image' in request.GET and request.GET["image"]:
